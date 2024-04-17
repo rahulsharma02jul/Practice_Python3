@@ -1,0 +1,80 @@
+# Create a dictionary:
+#Empty dictionary:
+
+dict = {}
+# With integer keys:
+
+dict = {1: "apple", 2: "orange"}
+# With mixed-type keys and values:
+dict = {"name": "Juan", 1: 100}
+
+# Access a dictionary:
+# Specifying the "key" as index:
+dict["name"]
+# Using get() method:
+dict.get(1)
+#Difference is that get does not return KeyError if the Key does not exist.
+
+# Change a value:
+dict["name"] = "Pedro"
+#Add a new pair:
+dict["color"] = "blue"
+dict["up"] = "down"
+#Pop and return an element – pop():
+dict.pop("name")
+
+# Pop and return an aribitrary element – popitem():
+dict.popitem()
+# Delete a single element – del():
+del dict[key]
+# Clear the dictionary:
+dict.clear()
+# Delete the object:
+del dict
+
+
+>>> mydict = {1:'Hello' , 2:'Python', 'key3': ['a','b','c'], 'key4':{'n1':'v1',
+'n2':'v2'}}
+>>> mydict[1]
+'Hello'
+>>> mydict[2]
+'Python'
+>>> mydict['key3']
+['a', 'b', 'c']
+>>> type(mydict['key3'])
+<class 'list'>
+>>> mydict['key3'][1]
+'b'
+>>> mydict['key4']
+{'n1': 'v1', 'n2': 'v2'}
+>>> type(mydict['key4'])
+<class 'dict'>
+>>> mydict['key4']['n2']
+'v2'
+>>> type(mydict['key4']['n2'])
+<class 'str'>
+>>> mydict['key4']['n2'].upper()
+'V2'
+>>> mydict['key4']['n2'] = 'New Value'
+>>> mydict['key4']['n2']
+'New Value'
+>>> mydict[5] = 'Value 5'
+>>> mydict
+{1: 'Hello', 2: 'Python', 'key3': ['a', 'b', 'c'], 'key4': {'n1': 'v1', 'n2':
+'New Value'}, 5: 'Value 5'}
+
+>>> mydict.keys()
+dict_keys([1, 2, 'key3', 'key4', 5])
+>>> mydict.values()
+dict_values(['Hello', 'Python', ['a', 'b', 'c'], {'n1': 'v1', 'n2': 'New Value'},
+'Value 5'])
+>>> mydict.items()
+dict_items([(1, 'Hello'), (2, 'Python'), ('key3', ['a', 'b', 'c']), ('key4',
+{'n1': 'v1', 'n2': 'New Value'}), (5, 'Value 5')])
+
+>>> mydict
+{1: 'Hello', 2: 'Python', 'key3': ['a', 'b', 'c'], 'key4': {'n1': 'v1', 'n2': 'v2'}}
+>>> del mydict[1]
+>>> mydict
+{2: 'Python', 'key3': ['a', 'b', 'c'], 'key4': {'n1': 'v1', 'n2': 'v2'}}
+

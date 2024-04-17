@@ -1,0 +1,105 @@
+# Create a list
+li = [0, 1, 2, 3, 4]
+print(li)
+
+# Add the length of the list at the end of the list
+list_l = len(li)
+print(list_l)
+
+li.append(list_l)
+print(li)
+
+# Add the word "hello" right between the 2 and 3
+li.insert(3, "hello")
+print(li)
+
+
+
+# Pop the first element off the list:
+element_pop = li.pop(0)
+print(element_pop)
+print(li)
+
+# Change the word "hello" for "bye" 
+li[2] = "bye"
+print(li)
+
+# Add a list with number 100 and 99 as the last element of the list and print 99
+li2 = [100,99]
+li.append(li2)
+print(li)
+
+print(li[6][1])
+
+>>> list1 = [1,2,3,4,5]
+>>> list2 = [6,7,8,9,10]
+>>> list1
+[1, 2, 3, 4, 5]
+>>> list2
+[6, 7, 8, 9, 10]
+>>> list1[4]
+5
+>>> list2[3]
+9
+>>> len(list1)
+5
+>>> list1 + list2
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+>>> list1
+[1, 2, 3, 4, 5]
+>>> list2
+[6, 7, 8, 9, 10]
+>>> list3 = list1 + list2
+>>> list3
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+>>> list1[0] + list1[1] + list2[3] + list2[4]
+22
+
+>>> list3
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+>>> list3.append(20)
+>>> list3
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 20]
+>>> list3.pop()
+20
+>>> list3
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+>>> list3.pop(4)
+5
+>>> list3
+[1, 2, 3, 4, 6, 7, 8, 9, 10]
+
+
+>>> list_num = [1,2,5,8,3,4,6]
+>>> list_char = ['d','e','g','a','f','b']
+>>> list_num.sort()
+>>> list_num
+[1, 2, 3, 4, 5, 6, 8]
+>>> list_char.sort()
+>>> list_char
+['a', 'b', 'd', 'e', 'f', 'g']
+>>> list_num.reverse()
+>>> list_num
+[8, 6, 5, 4, 3, 2, 1]
+>>> list_char.reverse()
+>>> list_char
+['g', 'f', 'e', 'd', 'b', 'a']
+
+>>> nested_list = [1,2,3,[4,5],[7,8,9],['a','b']]
+>>> nested_list
+[1, 2, 3, [4, 5], [7, 8, 9], ['a', 'b']]
+>>> nested_list[3]
+[4, 5]
+>>> nested_list[3][1]
+5
+>>> nested_list[5][0]
+'a'
+>>> type(nested_list)
+<class 'list'>
+>>> type(nested_list[3])
+<class 'list'>
+>>> type(nested_list[3][0])
+<class 'int'>
+>>> type(nested_list[5][0])
+<class 'str'>
+

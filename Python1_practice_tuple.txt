@@ -1,0 +1,30 @@
+>>> tup1 = (1,2,3,'Hello','This is Python3')
+>>> tup1
+(1, 2, 3, 'Hello', 'This is Python3')
+>>> type(tup1)
+<class 'tuple'>
+>>> tup1[0]
+1
+>>> tup1[3]
+'Hello'
+
+>>> tup1[0] = 'Hello'
+Traceback (most recent call last):
+File "<stdin>", line 1, in <module>
+TypeError: 'tuple' object does not support item assignment
+>>> type(tup1[3])
+<class 'str'>
+>>> tup1[3].upper()
+'HELLO'
+
+>>> tup1 = (1,2,3)
+>>> tup2 = ('a', 'b', 'c')
+>>> tup3 = tup1 + tup2
+>>> tup3
+(1, 2, 3, 'a', 'b', 'c')
+>>> del tup3
+>>> tup3
+Traceback (most recent call last):
+File "<stdin>", line 1, in <module>
+NameError: name 'tup3' is not defined
+
