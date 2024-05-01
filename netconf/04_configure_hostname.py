@@ -17,6 +17,8 @@ hostname_config = '''
 '''
 
 output = rtr_mgr.edit_config(hostname_config, target='running')
+# target='running' will throw an error bcoz, we have configured 'netconf-yang feature candidate
+# Either we remove that command or use target='candidate' alongwith rtr_mgr.commit()
 print(output)
 
 rtr_mgr.close_session()
